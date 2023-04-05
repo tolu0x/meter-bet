@@ -1,0 +1,49 @@
+---
+import '../styles/global.css';
+export interface Props {
+	title: string;
+	desc?: string;
+}
+
+let { title, desc } = Astro.props;
+if (!title) title = "MeterBet";
+if (!desc) desc = "Crypto betting platform on Meter blockchain";
+let keywords = "crypto, betting, meter, blockchain, web3";
+---
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Global Metadata -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <meta name="generator" content={Astro.generator} />
+        <meta name="keywords" content={keywords} />
+
+
+        <!-- Primary Meta Tags -->
+        <title>{title}</title>
+        <meta name="title" content={title} />
+        <meta name="description" content={desc} />
+
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={Astro.url} />
+        <meta property="og:title" content={title} />
+        <meta property="og:description" content={desc} />
+        <meta property="og:image" content="" />
+
+        <!-- Twitter -->
+        <meta property="twitter:card" content="" />
+        <meta property="twitter:url" content="https://twitter.com/" />
+        <meta property="twitter:title" content={title} />
+        <meta property="twitter:description" content={desc} />
+        <meta property="twitter:image" content="" />
+
+    </head>
+
+    <body>
+        <slot />
+    </body>
+</html>

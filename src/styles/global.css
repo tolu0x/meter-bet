@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+  font-family: Race-freak;
+  src: url('../assets/fonts/race-freak.otf');
+}
+
+:root{
+  --bg-color: #000000;
+  --fg-color: #ffffff;
+}
+
+.rf{
+  font-family: 'Race-freak', sans-serif;
+}
+
+.bg-wrapper{
+  background-image: url("../assets/bg-img.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  background-color: #180118;
+}
+
+
+body{
+  font-family: "Poppins", sans-serif;
+  color: #ffffff;
+}

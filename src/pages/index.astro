@@ -1,0 +1,42 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import desc from '../assets/desc-frame.png'
+import line1 from '../assets/line-1.png'
+import line2 from '../assets/line-2.png'
+import Card from '../components/Card.astro';
+---
+
+<Layout title="MeterBet" desc="Crypto betting platform">
+	<div>	
+		<Header />
+		
+		<main class="relative bg-wrapper h-[90vh]">
+			<div class="pt-44 px-[4rem]">
+				<h1 class="rf text-7xl w-40">METER BET</h1>
+				<p class="w-[27rem] pt-4 pb-6">Welcome to the #1 casino on Meter, Where you can play games like coin flip or Jackpot and win tokens or rare NFTs to add to your collection.</p>
+				<a href="#" class="p-3 rounded-xl bg-purple-700 hover:text-purple-700 hover:bg-white transition-colors ease-in">Launch dApp</a>
+			</div>
+			
+		</main>
+		<section class="bg-[#180118] pt-10 pb-32">
+			<div>
+				<div class="flex flex-col justify-center items-center gap-2">
+					<h2 class="text-center text-3xl font-bold">Immersive Gambling Experience</h2>
+					<img src={line2} class="w-96">
+				</div>
+
+				<div class="w-[80%] my-0 mx-auto pt-8 pb-20">
+					<img src={desc}>
+				</div>
+			</div>
+
+			<div>
+				<div class="flex flex-col justify-center items-center gap-2">
+					<h2 class="text-center text-3xl font-bold">Games (Coming soon)</h2>
+					<img src={line1} class="w-96">
+				</div>
+			</div>
+		</section>
+	</div>
+</Layout>
