@@ -1,10 +1,20 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
-import desc from '../assets/desc-frame.png'
-import line1 from '../assets/line-1.png'
-import line2 from '../assets/line-2.png'
-import Card from '../components/Card.astro';
+import desc from '../assets/desc-frame.png';
+import utilityDesc from '../assets/utility-desc.png';
+import coinflip from '../assets/coinflip.png';
+import crash from '../assets/crash.png';
+import dice from '../assets/dice.png';
+import lotto from '../assets/lotto.png';
+import raffle from '../assets/raffle.png';
+import roulette from '../assets/roulette.png';
+import line1 from '../assets/line-1.png';
+import line2 from '../assets/line-2.png';
+import line3 from '../assets/line-7.png';
+import circle1 from '../assets/circle-1.png';
+import tg from '../assets/telegram-logo.png';
+import tw from '../assets/twt-logo.png';
 ---
 
 <Layout title="MeterBet" desc="Crypto betting platform">
@@ -19,7 +29,7 @@ import Card from '../components/Card.astro';
 			</div>
 			
 		</main>
-		<section class="bg-[#180118] pt-10 pb-32">
+		<section class="bg-[#180118] pt-10 pb-20">
 			<div>
 				<div class="flex flex-col justify-center items-center gap-2">
 					<h2 class="text-center text-3xl font-bold">Immersive Gambling Experience</h2>
@@ -32,11 +42,46 @@ import Card from '../components/Card.astro';
 			</div>
 
 			<div>
-				<div class="flex flex-col justify-center items-center gap-2">
+				<div class="flex flex-col justify-center items-center gap-2 pb-10">
 					<h2 class="text-center text-3xl font-bold">Games (Coming soon)</h2>
 					<img src={line1} class="w-96">
 				</div>
+
+				<div class="grid grid-cols-3 gap-5 my-0 mx-auto w-[80%]">
+					<img src={coinflip} alt="Coinflip">
+					<img src={raffle} alt="Lotto">
+					<img src={crash} alt="Crash">
+					<img src={dice} alt="Dice">
+					<img src={lotto} alt="Lotto">
+					<img src={roulette} alt="Roulette">
+				</div>
 			</div>
+
+			<div>
+				<div class="relative mt-40 pb-20">
+					<h2 class="text-center text-3xl pt-9 font-bold">$BET token</h2>
+					<img src={circle1} class="w-80 absolute left-1/3  top-0">
+				</div>
+
+				<div class="w-[80%] my-0 mx-auto pt-8 pb-20">
+					<img src={utilityDesc}>
+				</div>
+			</div>
+
+			<footer class="flex items-center justify-center gap-3">
+				<div class="flex flex-col justify-center items-center ">
+					<h3 class="text-center text-3xl font-semibold">Let's roll</h3>
+					<img src={line3} class="w-50">
+				</div>
+
+				<a href="#">
+					<img src={tg}>
+				</a>
+
+				<a href="#">
+					<img src={tw}>
+				</a>
+			</footer>
 		</section>
 	</div>
 </Layout>
