@@ -32,3 +32,16 @@ body{
   font-family: "Poppins", sans-serif;
   color: #ffffff;
 }
+
+
+@media only screen and (max-width: 650px) {
+  
+  .bg-wrapper{
+    background-image: url("../assets/mobile-bg.png");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    background-color: #180118;
+  }
+
+}

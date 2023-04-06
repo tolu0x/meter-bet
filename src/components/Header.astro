@@ -2,15 +2,15 @@
 import logo from "../assets/logo.png"
 ---
 
-<header class="flex items-center justify-between fixed w-full h-20 px-[6vw] left-0 z-30">
-	<a href="/" class="text-3xl inline-block flex items-center justify-between gap-2 rf">
-        <img src={logo} alt="MeterBet">
-        <p>MeterBet</p>
+<header class="flex items-center justify-between fixed lg:w-full sm:w-[100%] h-20 lg:px-[6vw] sm:px-[1rem] left-0 z-30">
+	<a href="/" class=" inline-block flex items-center justify-between gap-2 rf">
+        <img src={logo} class="sm:w-[80%]" alt="MeterBet">
+        <p class="lg:text-3xl sm:text-xl">MeterBet</p>
     </a>
 
 	<nav class="flex items-center glass justify-center md:w-[75%] lg:w-max gap-4" role="navigation">
 			<a href="/">Games</a>
 			<a href="/">Docs</a>
-			<a href="#" class="p-3 rounded-xl bg-purple-700 hover:text-purple-700 hover:bg-white transition-colors ease-in">Launch dApp</a>
+			<a href="#" class="p-3 rounded-xl bg-purple-700 hover:text-purple-700 hover:bg-white transition-colors ease-in ds-only">Launch dApp</a>
 	</nav>
 </header>

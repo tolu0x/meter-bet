@@ -2,7 +2,9 @@
 import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
 import desc from '../assets/desc-frame.png';
+import descMobile from '../assets/desc-frame-mobile.png';
 import utilityDesc from '../assets/utility-desc.png';
+import utilityDescMobile from '../assets/utility-desc-mobile.png';
 import coinflip from '../assets/coinflip.png';
 import crash from '../assets/crash.png';
 import dice from '../assets/dice.png';
@@ -21,10 +23,10 @@ import tw from '../assets/twt-logo.png';
 	<div>	
 		<Header />
 		
-		<main class="relative bg-wrapper h-[90vh]">
-			<div class="pt-44 px-[4rem]">
-				<h1 class="rf text-7xl w-40">METER BET</h1>
-				<p class="w-[27rem] pt-4 pb-6">Welcome to the #1 casino on Meter, Where you can play games like coin flip or Jackpot and win tokens or rare NFTs to add to your collection.</p>
+		<main class="relative bg-wrapper h-[90vh] sm:h-[60vh]">
+			<div class="pt-44 px-[4rem] sm:px-[1.7rem]">
+				<h1 class="rf text-7xl sm:text-4xl w-40">METER BET</h1>
+				<p class="w-[27rem] sm:w-[19rem] pt-4 pb-6">Welcome to the #1 casino on Meter, Where you can play games like coin flip or Jackpot and win tokens or rare NFTs to add to your collection.</p>
 				<a href="#" class="p-3 rounded-xl bg-purple-700 hover:text-purple-700 hover:bg-white transition-colors ease-in">Launch dApp</a>
 			</div>
 			
@@ -32,22 +34,27 @@ import tw from '../assets/twt-logo.png';
 		<section class="bg-[#180118] pt-10 pb-20">
 			<div>
 				<div class="flex flex-col justify-center items-center gap-2">
-					<h2 class="text-center text-3xl font-bold">Immersive Gambling Experience</h2>
-					<img src={line2} class="w-96">
+					<h2 class="text-center text-3xl sm:text-xl font-bold">Immersive Gambling Experience</h2>
+					<img src={line2} class="w-96 sm:w-72">
 				</div>
 
-				<div class="w-[80%] my-0 mx-auto pt-8 pb-20">
-					<img src={desc}>
+				<div class="w-[80%] my-0 mx-auto pt-8 pb-20 ds-only lg:block sm:hidden">
+					<img src={desc} >
+				</div>
+
+				<div class="w-[80%] my-0 mx-auto pt-8 pb-20 mb-only lg:hidden sm:block">
+					<img src={descMobile}>
 				</div>
 			</div>
 
 			<div>
 				<div class="flex flex-col justify-center items-center gap-2 pb-10">
-					<h2 class="text-center text-3xl font-bold">Games (Coming soon)</h2>
-					<img src={line1} class="w-96">
+					<h2 class="text-center text-3xl sm:text-xl font-bold">Games (Coming soon)</h2>
+					<img src={line1} class="w-96 sm:w-72">
 				</div>
 
-				<div class="grid grid-cols-3 gap-5 my-0 mx-auto w-[80%]">
+				<div class="flex items-center justify-center">
+					<div class="grid grid-cols-3 sm:grid-cols-1 lg:gap-5 sm:gap-9">
 					<img src={coinflip} alt="Coinflip">
 					<img src={raffle} alt="Lotto">
 					<img src={crash} alt="Crash">
@@ -55,16 +62,21 @@ import tw from '../assets/twt-logo.png';
 					<img src={lotto} alt="Lotto">
 					<img src={roulette} alt="Roulette">
 				</div>
+				</div>
 			</div>
 
 			<div>
-				<div class="relative mt-40 pb-20">
+				<div class="relative mt-40 lg:pb-32 sm:pb-9">
 					<h2 class="text-center text-3xl pt-9 font-bold">$BET token</h2>
-					<img src={circle1} class="w-80 absolute left-1/3  top-0">
+					<img src={circle1} class="w-80 sm:w-64 absolute lg:left-1/3 sm:left-20  top-0">
 				</div>
 
-				<div class="w-[80%] my-0 mx-auto pt-8 pb-20">
+				<div class="w-[80%] my-0 mx-auto pt-8 pb-20 ds-only lg:block sm:hidden">
 					<img src={utilityDesc}>
+				</div>
+
+				<div class="w-[80%] my-0 mx-auto pt-8 pb-20 mb-only lg:hidden sm:block">
+					<img src={utilityDescMobile}>
 				</div>
 			</div>
 
