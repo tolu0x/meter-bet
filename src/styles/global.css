@@ -27,6 +27,22 @@
   background-color: #180118;
 }
 
+.desc-wrapper{
+  background-image: url("../assets/desc-frame.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  background-color: #180118;
+}
+
+.utility-desc{
+  background-image: url("../assets/utility-desc.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  background-color: #180118;
+}
+
 
 body{
   font-family: "Poppins", sans-serif;
@@ -44,4 +60,19 @@ body{
     background-color: #180118;
   }
 
+  .desc-wrapper{
+  background-image: url("../assets/desc-frame-mobile.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  background-color: #180118;
+}
+
+.utility-desc{
+  background-image: url("../assets/utility-desc-mobile.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  background-color: #180118;
+}
 }

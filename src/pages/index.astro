@@ -11,10 +11,11 @@ import dice from '../assets/dice.png';
 import lotto from '../assets/lotto.png';
 import raffle from '../assets/raffle.png';
 import roulette from '../assets/roulette.png';
+import rndm from '../assets/randomness.png';
 import line1 from '../assets/line-1.png';
 import line2 from '../assets/line-2.png';
 import line3 from '../assets/line-7.png';
-import circle1 from '../assets/circle-1.png';
+import bet from '../assets/bet-img.png';
 import tg from '../assets/telegram-logo.png';
 import tw from '../assets/twt-logo.png';
 ---
@@ -33,18 +34,19 @@ import tw from '../assets/twt-logo.png';
 		</main>
 		<section class="bg-[#180118] pt-10 pb-20">
 			<div>
-				<div class="flex flex-col justify-center items-center gap-2">
+				<div class="pb-8 flex flex-col justify-center items-center gap-2">
 					<h2 class="text-center text-3xl sm:text-xl font-bold">Immersive Gambling Experience</h2>
 					<img src={line2} class="w-96 sm:w-72">
 				</div>
 
-				<div class="w-[80%] my-0 mx-auto pt-8 pb-20 ds-only lg:block sm:hidden">
-					<img src={desc} >
+				<div class="p-5 mb-8 sm:p-2 desc-wrapper w-[80%] sm:w-[90%] sm:h-[140%] rounded-xl flex flex-col items-start justify-around h-80 my-0 mx-auto">
+					<p class="w-[27rem] sm:w-[15rem] sm:py-5">
+						We are dedicated to providing a secure, fun, and provably fair gambling platform that players can trust and enjoy returning to, By leveraging the power, speed and scalability of the Meter Network, we will be able to offer innovative features and also enhance the immersive experience of traditional casino games with blockchain technology.
+					</p>
+
+					<img src={rndm} class="w-40 sm:w-28">
 				</div>
 
-				<div class="w-[80%] my-0 mx-auto pt-8 pb-20 mb-only lg:hidden sm:block">
-					<img src={descMobile}>
-				</div>
 			</div>
 
 			<div>
@@ -66,21 +68,20 @@ import tw from '../assets/twt-logo.png';
 			</div>
 
 			<div>
-				<div class="relative mt-40 lg:pb-32 sm:pb-9">
-					<h2 class="text-center text-3xl pt-9 font-bold">$BET token</h2>
-					<img src={circle1} class="w-80 sm:w-64 absolute lg:left-1/3 sm:left-20  top-0">
+				<div class="mt-40 flex items-center justify-center lg:pb-32 sm:pb-9">
+					<img src={bet} class="w-80 sm:w-64">
 				</div>
 
-				<div class="w-[80%] my-0 mx-auto pt-8 pb-20 ds-only lg:block sm:hidden">
-					<img src={utilityDesc}>
-				</div>
-
-				<div class="w-[80%] my-0 mx-auto pt-8 pb-20 mb-only lg:hidden sm:block">
-					<img src={utilityDescMobile}>
+				<div class="p-5 sm:p-2 utility-desc w-[80%] sm:w-[90%] rounded-xl flex flex-col items-start justify-around h-80 my-0 mx-auto">
+					<p class=" w-[27rem] sm:w-[13rem]">
+						$Bet is our official utility token. By holding $Bet tokens, you become a part-owner of MeterBet, granting you access to perks like rev, share and other exciting features we have in store.
+					</p>
+					
+					<a href="#" class="p-3 rounded-xl bg-purple-700 hover:text-purple-700 hover:bg-white transition-colors ease-in">Presale (Soon)</a>
 				</div>
 			</div>
 
-			<footer class="flex items-center justify-center gap-3">
+			<footer class="mt-9 flex items-center justify-center gap-3">
 				<div class="flex flex-col justify-center items-center ">
 					<h3 class="text-center text-3xl font-semibold">Let's roll</h3>
 					<img src={line3} class="w-50">
